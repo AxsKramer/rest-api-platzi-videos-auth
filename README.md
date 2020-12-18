@@ -1,5 +1,5 @@
-# rest-api-platzi-videos-auth
-Authetication 
+# Rest Api Platzi Videos Auth
+Authentication 
 
 ### JWT
 > Es un estándar de la industria que nos permite manejar demandas de información entre dos clientes.
