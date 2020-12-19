@@ -1,5 +1,34 @@
-# rest-api-platzi-videos-auth
+# Rest Api Platzi Videos Auth
 Authetication 
+
+Se va a desarrollar un sistema de autenticación con passport.js en el que nos conectemos con un API Server teniendo en cuenta los permisos de lectura y/o escritura que tengas.
+
+El API Server sólo tendrá un CRUD (Create, Read, Update, Delete), CRUD de videos.
+
+Además crearemos 2 nuevos endpoints, 1 de ingreso (signIn) y otro de registro (signUp)
+
+API Token
+Se crearán 2 tipos de Access token:
+
+Admin client: permisos administrativos (CRUD películas)
+
+Render Server: permisos de sólo lectura (R películas)
+
+Al hacer una autenticación se va a generar un access token, con el estándar de JWT (JSON Web Token), mismo que mantendrá los permisos.
+
+Reglas
+La aplicación (SPA, single page application) se va a comunicar a través del Render Server (de sólo lectura) mismo que se comunicará con el API Server
+
+El server que crearemos hará de proxy entre la SPA y el API server
+
+La SPA se comunicará con el API server mediante una cookie con el access token del render server
+
+#### Passport.js 
+Es un middleware para express que nos permite implementar estrategias de autenticación de una manera rápida y simple.
+
+<div>
+  <img src='./arq.png' width='500' align='center' />
+</div>
 
 ### JWT
 > Es un estándar de la industria que nos permite manejar demandas de información entre dos clientes.
